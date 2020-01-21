@@ -25,9 +25,7 @@ l = [s0, s1, s2, s3, s4, s5, s6, s7]
 #will randomise replies
 
 def suns_reply():
-    #last()
-    mentions = api.mentions_timeline(tweet_mode='extended')
-    #print('I am running')    
+    mentions = api.mentions_timeline(tweet_mode='extended')   
     with open('last_id.txt', 'r') as l_id:
         ls = []
         for line in l_id:
